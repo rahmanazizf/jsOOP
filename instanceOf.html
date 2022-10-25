@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instance Of Operator</title>
+  </head>
+  <body>
+    <script>
+      class Employee {}
+
+      class Manager extends Employee {}
+
+      const aziz = new Manager();
+      const bayu = new Employee();
+
+      console.info(aziz instanceof Manager); // returns boolean value
+      console.info(aziz instanceof Employee); // this holds ture since Manager is derivative of Employee class
+
+      console.info(bayu instanceof Manager);
+    </script>
+  </body>
+</html>
